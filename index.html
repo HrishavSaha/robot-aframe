@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+
+    <a-plane 
+    width="5" 
+    height="4" 
+    position="0 0 -4" 
+    rotation="-90 0 0" 
+    color="grey">
+    </a-plane>
+
+    <a-box
+    position="0 1.5 -4"
+    color="#edbe15"
+    scale="1.5 2">
+    </a-box>
+
+    <a-box
+    position="0.5 0 -4"
+    color="#55a2e0"
+    scale="0.25 1 0.5">
+    </a-box>
+
+    <a-box
+    position="-0.5 0 -4"
+    color="#55a2e0"
+    scale="0.25 1 0.5">
+    </a-box>
+
+    <a-box
+    position="-1 2 -4"
+    color="#e68739"
+    scale="0.25 1 0.5"
+    rotation="0 0 -45">
+    </a-box>
+
+    <a-box
+    position="1 2 -4"
+    color="#e68739"
+    scale="0.25 1 0.5"
+    rotation="0 0 45">
+    </a-box>
+
+    <a-box
+    position="0 2.6 -4"
+    color="#e68739"
+    scale="1 0.1 0.5">
+    </a-box>
+
+    <a-box
+    position="0 3 -4"
+    color="#edbe15"
+    scale="1.5 0.7">
+    </a-box>
+
+    <a-sphere
+    radius="0.1"
+    color="#fff"
+    rotation="0 0 0"
+    position="0.3 3 -3.5"
+    animation="property: rotation;
+    from: 0 45 0;
+    to: 0 -45 0;
+    dir: alternate;
+    easing: linear;
+    loop: true;
+    dur: 1000;">
+      <a-sphere
+      position="0 0 0.06"
+      radius="0.05"
+      color="#000">
+      </a-sphere>
+    </a-sphere>
+
+    <a-sphere
+    radius="0.1"
+    color="#fff"
+    rotation="0 0 0"
+    position="-0.3 3 -3.5"
+    animation="property: rotation;
+    from: 0 45 0;
+    to: 0 -45 0;
+    dir: alternate;
+    easing: linear;
+    loop: true;
+    dur: 1000;">
+      <a-sphere
+      position="0 0 0.06"
+      radius="0.05"
+      color="#000">
+      </a-sphere>
+    </a-sphere>
+
+    <a-entity rotation="90 0 0" position="0 3.4 -4">
+    <a-cylinder
+    color="#55a2e0"
+    scale="0.4 0.4 0.4"
+    animation="property: rotation;
+    from: 0 45 0;
+    to: 0 -45 0;
+    dir: alternate;
+    easing: linear;
+    loop: true;
+    dur: 1000;">
+      <a-sphere
+      color="#e68739"
+      position="0 0 -1.5"
+      scale="0.4 0.4 0.4">
+      </a-sphere>
+    </a-cylinder>
+  </a-entity>
+
+  </a-scene>
+</body>
+</html>
